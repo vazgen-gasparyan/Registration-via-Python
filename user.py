@@ -58,7 +58,7 @@ Please enter valid email  -  ''').lower()
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.starttls
     server.login('Your gmail address','gmail password') # Please write your gmail address and password
-    server.sendmail('Your gmail address',email, f'Subject: Your Python code password \n\nWelcome to my program and thank you for registering.\n\nYour credentials:\nUsername - {username}\nPassword - {password}\n\nThank you again for your registration. If you have any questions, I am here to help you!\nSincerely,\nVazgen Gasparyan')
+    server.sendmail('Your gmail address',email, f'Subject: Your Python code password \n\nWelcome to my program and thank you for registering.\n\nYour credentials:\nUsername - {username}\nPassword - {password}\n\nThank you again for your registration. If you have any questions, I am here to help you!\nSincerely,\nYour full name') # Write your full name
     server.quit()
     print(f'''
 Your password has been sent to your email address.
